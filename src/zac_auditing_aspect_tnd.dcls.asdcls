@@ -1,0 +1,10 @@
+define accesspolicy ZAC_AUDITING_ASPECT_TND {
+    @EndUserText.label: 'Auditing Aspect'
+    define aspect ZAC_AUDITING_ASPECT_TND as
+        select from ZCDS_AUDITING_ASPECT_TND with user element CreateBy
+            {         
+              CreateBy,     
+              CustomerName              
+            }
+            
+}

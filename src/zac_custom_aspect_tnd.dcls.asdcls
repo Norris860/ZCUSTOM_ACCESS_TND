@@ -1,0 +1,7 @@
+@EndUserText.label: 'Custom Aspect'
+@MappingRole: true
+define role ZAC_CUSTOM_ASPECT_TND {
+    grant select on zcds_auditing_aspect_tnd          
+          where ( createby, InvoiceId ) = aspect ZAC_AUDITING_ASPECT_TND
+          or InvAmount > 100;
+}

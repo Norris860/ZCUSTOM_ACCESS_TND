@@ -1,0 +1,8 @@
+@EndUserText.label: 'Usuary Aspect'
+@MappingRole: true
+define role ZAC_COM_INV_2_TND {
+    grant select on zcds_com_inv_2_tnd
+          where CreateBy = aspect user; // $session.user; 
+          
+                        
+}
